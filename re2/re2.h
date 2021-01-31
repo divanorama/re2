@@ -956,7 +956,7 @@ namespace hooks {
 // of Apple platforms that aren't macOS. If an iOS application really needs
 // the context pointee someday, we can get more specific then...
 #define RE2_HAVE_THREAD_LOCAL
-#if defined(__APPLE__) && !TARGET_OS_OSX
+#if defined(__APPLE__)
 #undef RE2_HAVE_THREAD_LOCAL
 #endif
 
